@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<script>
+function validat()
+{
+var valid=true;
+
+if(form1.txt1.value=="")
+{
+alert("please fill field");
+valid=false;
+}
+else if (form1.txt2.value=="")
+{
+alert("please fill field");
+valid=false;
+}
+else if (form1.txt3.value=="")
+{
+alert("please fill field");
+valid=false;
+}
+else if (form1.f9.value=="")
+{
+alert("please select gender");
+valid=false;
+}
+else if (forrm1.f11.value=="")
+{
+alert("please select hobby");
+valid=false;
+}
+return valid;
+}
+</script>
+<body>
+<form id="form1" name="frm" method="get" onsubmit=" return validat();">
+Enter name:
+<input type="text" id="txt1"/>
+Enter rol:
+<input type="text" id="txt2"/>
+Enter add:
+<input type="text" id="txt3"/>
+<label>Select Gender:</label> <input type="radio" id="f9" name="gender" value="male" />Male <input type="radio" name="gender" value="female" id="f9"/>Female<br />
+<label>Select your Hobby:</label>
+<input type="checkbox" id="f11"/> Reading 
+<input type="checkbox" id="f11"/> Writing 
+<input type="checkbox" id="f11"/> Gardening 
+<input type="checkbox"id="f11"/> Drawing
+<input type="checkbox" id="f11"/> Sleeping
+<input type="checkbox" id="f11"/> Other 
+<input type="submit" value="Submit"/>
+</body>
+</html

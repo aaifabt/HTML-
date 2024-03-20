@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<script>
+images=new Array[];
+images[1]="1.jpg";
+images[2]="2.jpg";
+images[3]="3.jpg";
+images[4]="4.jpg";
+function abc()
+{
+var imgnumbr=4;
+var randmnumb=Math.random();
+var rand1=Math.round(imgnumbr-1)*randmnumb)+1;
+var image=images[rand1];
+document.getElementById("imag").src=image;
+}
+</script>
+<body>
+<script type="text/javascript">
+var x=setInterval("abc()",1000)
+</script>
+<table border="2">
+<tr> <th>Moving Imges</th></tr>
+<tr><td><img id="imag" src=" 1.jpg" alt="sorry"  border="0" width="180" height="150" />
+</td></tr>
+</table>
+</body>
+</html>
